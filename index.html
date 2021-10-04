@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Injaz Tickets</title>	
+<link rel="stylesheet"href= "css/main.css">
+<link rel="stylesheet" href="./css/fontaweasome/css/all.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+</style>
+
+<link rel="shortcut icon"type="image.png" href="image/Logoo.png">
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>	
+</head>
+<body>
+	
+    <!------ header ----------->
+    <header>
+		<div class="id">
+		<img src="image/officers/officer2.jpg">
+		</div>
+		<ul>
+		<li><i class="far fa-bell"></i></li>
+		<li><i class="fas fa-th-large"></i></li>
+		<li id="search-btn"><i><img src="image/icon.png"></i></li>
+		</ul>
+    </header>
+	    <!------End header ----------->
+
+	    <!------ Search ----------->
+ <div class="search-holder" id="s-holder">     
+    <form>
+	 <input type ="text"class="search"id="search-input"placeholder="look at tickets history">
+      <button class="find">find it</button>
+   </form>      
+   </div> 
+    <!------ End Search ----------->
+
+	
+
+	   
+	<! –– left bar -->
+ <div class="left">
+  <ul class="main-ul">
+   <li><i class="fas fa-home"></i>dashboard</li>
+   <li class="l-open">
+	 <i class="fab fa-openid"></i>ticket
+   </li>
+	  <ul class="x-ul">
+	   <li>open</li>
+	   <li>todo's</li>
+	   <li>pending</li>
+	   </ul>
+<li class="l-open" ><i class="fa fa-user-circle"></i>profile</li>
+	<ul class="x-ul">
+	<li>summary</li>
+	<li>score</li>	
+	</ul>    
+   <li class="l-open" ><i class="far fa-plus-square"></i>request</li>
+	<ul class="x-ul">
+	<li>annual</li>
+	<li>excuse</li>
+	<li>loan</li> 
+	</ul>
+	  <li class="l-open"><i class="far fa-lightbulb"></i>brilliant</li>
+	  <ul class="x-ul" id="u2">
+	<li>share</li>
+	<li>show on</li>	
+	</ul>    
+   <li><i class="far fa-clock"></i>events</li>
+   <li><i class="fa fa-sign-out-alt "></i>sign out</li>
+   </ul>
+     <div class="timer">
+		<span>08</span>
+		<span>00</span>
+	 </div>
+    </div>
+	<div class="medium" id="toggle">
+	<! -----------dashboard----------- >
+     <div class="dashboard">
+	    <div class="dash">
+		  <p>total tasks</p>
+		  <h1>132</h1>	
+		</div>	 
+	    <div class="dash">
+		   <p>opening</p>
+		  <h1>3</h1>	
+		</div>	 
+	    <div class="dash">
+		   <p>closed</p>
+		  <h1>129</h1>	
+		</div>
+		 <table class="ongoing">
+        <thead>
+        <tr>
+            <th>task</th>
+            <th>deadline</th>
+            <th>team</th>
+            <th>officer</th>
+            <th>status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>cover</td>
+            <td>21,oct</td>
+            <td>youTube</td>
+            <td>nourhan</td>
+            <td><span class="status-orange" >in progress</span></td>
+        </tr>
+        <tr>
+            <td>thumbnail</td>
+            <td>9,sept</td>
+            <td>youTube</td>
+            <td>hadeer</td>
+            <td><span class="status-green">new</span></td>
+        </tr>
+        <tr>
+            <td>artwork</td>
+            <td>8,sept</td>
+            <td>youTube </td>
+            <td>hamam</td>
+            <td><span class="status-green">new</span></td>
+        </tr>
+        <tr>
+            <td>cover</td>
+            <td>9,sept</td>
+            <td>social</td>
+            <td>israa</td>
+            <td><span class="status-green">new</span></td>
+        </tr>
+        <tr>
+            <td>artwork</td>
+            <td>10,sept</td>
+            <td>digital</td>
+            <td>aya</td>
+            <td><span class="status-green">new</span></td>
+        </tr>
+        <tr>
+            <td>post</td>
+            <td>7,sept</td>
+            <td>social</td>
+            <td>mai</td>
+            <td><span class="status-red">closed</span></td>
+        </tr>
+        <tr>
+            <td>profile</td>
+            <td>6,sept</td>
+            <td>youTube</td>
+            <td>ahmed</td>
+            <td><span class="status-red">closed</span></td>
+        </tr>
+        <tr>
+            <td>cp</td>
+            <td>6,sept</td>
+            <td>youTube</td>
+            <td>ahmed</td>
+            <td><span class="status-red">closed</span></td>
+        </tr>
+        <tr>
+            <td>story</td>
+            <td>6,sept</td>
+            <td>youTube</td>
+            <td>hamam</td>
+            <td><span class="status-red">closed</span></td>
+        </tr>
+        <tr>
+            <td>cuts</td>
+            <td>6,sept</td>
+            <td>social</td>
+            <td>anas</td>
+            <td><span class="status-red">closed</span></td>
+        </tr>
+        <tbody>
+       </table>
+	  </div>
+	  <! ---------------End dashboard----------- >
+
+		
+		
+		
+ <! ----------------–– Evaluation Object father ---------- > 
+       <div class="object-father" id="father"> 
+
+        <div class="object">
+			<div class="progress">
+		   <h4>daily</h4>
+		  <div class="meter cadetblue">
+          <span data-progress="12" style="width:0;"></span>
+          </div>
+			
+		   <h4>assigned</h4>
+          <div class="meter red">
+           <span data-progress="35" style="width:0;"></span>
+           </div>
+			
+		   <h4>supportive</h4>
+           <div class="meter orange">
+           <span data-progress="62" style="width:0;"></span>
+           </div>
+		 </div>
+         </div> 
+
+
+      </div>
+<! ----------------–– Evaluation Object father ---------- > 
+
+          
+
+        
+	<! -----–-------– Open a ticket  --------------- > 
+ <div class="ticket-parent" id="">
+	 <div class="officer">
+	 <! --- officer navs inputs ---!>
+		 <input type="radio" name="officer" id="up" checked>
+		  <input type="radio" name="officer" id="up1">
+	      <input type="radio" name="officer" id="up2">
+	      <input type="radio" name="officer" id="up3">
+	      <input type="radio" name="officer" id="up4">
+	      <input type="radio" name="officer" id="up5">
+	 	  <input type="radio" name="officer" id="off1">
+		 <input type="radio" name="officer" id="off2">
+		 <input type="radio" name="officer" id="off3">
+		 <input type="radio" name="officer" id="off4">
+		 <input type="radio" name="officer" id="off5">
+		 <input type="radio" name="officer" id="off6">
+		 <input type="radio" name="officer" id="off7">
+		 <input type="radio" name="officer" id="off8">
+		 <input type="radio" name="officer" id="off9">
+		 <input type="radio" name="officer" id="off10">
+		 <input type="radio" name="officer" id="off11">
+		 <input type="radio" name="officer" id="off12">
+		 <input type="radio" name="officer" id="off13">
+		 <input type="radio" name="officer" id="off14">
+		 <input type="radio" name="officer" id="off15">
+		 <input type="radio" name="officer" id="off16">
+		 <input type="radio" name="officer" id="off17">
+		 <input type="radio" name="officer" id="off18">
+		 <input type="radio" name="officer" id="off19">
+		 <input type="radio" name="officer" id="off20">
+		 <input type="radio" name="officer" id="off21">
+		 <input type="radio" name="officer" id="off22">
+		 <input type="radio" name="officer" id="off23">
+		 <input type="radio" name="officer" id="off24">	
+	 		 <! --- officer navs inputs ---!>
+
+		<h3>select a team :</h3>
+
+	<div class="navs">
+	<label for="up1" id="dot1">creative</label>
+    <label for="up2" id="dot2">digital</label>
+	<label for="up3" id="dot3">social</label>
+	<label for="up4" id="dot4">youTube</label>
+	<label for="up5" id="dot5">acquisition</label>
+	</div>
+		 
+	<div class="officer-pic">	
+		
+		<div class="img youtube shady">
+	<label for="off1" id="do1"><img src="image/officers/shady.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>shady yousri</h3>
+			  <p>youTube specialist</p>
+			</div>
+		</div>
+		<div class="img youtube hadeer">
+			<label for="off2" id="do2"><img src="image/officers/hadeer.jfif"></label>
+			<div class= "pic-overlay">
+			  <h3>hadeer teama</h3>
+			  <p>youTube specialist</p>
+			</div>
+		</div>
+		<div class="img creative ali">
+			<label for="off3" id="do3"><img src="image/officers/ali.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>ahmed ali</h3>
+			  <p>graphic designer</p>
+			</div>
+		</div>
+		<div class="img youtube maram">
+			<label for="off4" id="do4"><img src="image/officers/maram.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>maram samy</h3>
+			  <p>cms manager</p>
+			</div>
+		</div>
+		<div class="img youtube nourhan">
+			<label for="off5" id="do5"><img src="image/officers/nourhan.jfif"></label>
+		    <div class= "pic-overlay">
+			 <h3>nourhan abd salam</h3>
+			  <p>youtube specialist</p>
+			</div>
+		</div>
+		<div class="img youtube ashara">
+			<label for="off6" id="do6"><img src="image/officers/ashara.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>ahmed eishra</h3>
+			  <p>youtube manager</p>
+			</div>
+		</div>
+		<div class="img youtube nouran">
+			<label for="off7" id="do7"><img src="image/officers/nouran.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>nouran amr</h3>
+			  <p>youtube specialist</p>
+			</div>
+		</div>
+		<div class="img youtube hamam">
+			<label for="off8" id="do8"><img src="image/officers/hamam.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>mohamed hamam</h3>
+			  <p>cms manager</p>
+			</div>
+		</div>
+		<div class="img youtube ahmed">
+			<label for="off9" id="do9"><img src="image/officers/of.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>ahmed mostafa</h3>
+			  <p>cms manager</p>
+			</div>
+		</div>
+		<div class="img social mai">
+			<label for="off10" id="do10"><img src="image/officers/mai.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>mai el gendy</h3>
+			  <p>social media manager</p>
+			</div>
+		</div>
+		<div class="img social hadeers">
+			<label for="off11" id="do11"><img src="image/officers/hadeerS.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>hadeer sayed</h3>
+			  <p>social media specialist</p>
+			</div>
+		</div>
+		<div class="img social anas">
+			<label for="off12" id="do12"><img src="image/officers/anas.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>anas tarek</h3>
+			  <p>social media specialist</p>
+			</div>
+		</div>
+		<div class="img social isra">
+			<label for="off13" id="do13"><img src="image/officers/israa.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>isra zaki</h3>
+			  <p>social media specialist</p>
+			</div>
+		</div>
+		<div class="img social menna">
+			<label for="off14" id="do14"><img src="image/officers/menna.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>menna elnakkah</h3>
+			  <p>social media specialist</p>
+			</div>
+		</div>
+		<div class="img social mamdouh">
+			<label for="off15" id="do15"><img src="image/officers/mamdouh.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>mamdouh</h3>
+			  <p>social media specialist</p>
+			</div>
+		</div>
+		<div class="img creative khaled">
+			<label for="off16" id="do16"><img src="image/officers/khaled.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>khaled fahmy</h3>
+			  <p>video editor</p>
+			</div>
+		</div>
+		<div class="img creative safaa">
+			<label for="off17" id="do17"><img src="image/officers/safaa.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>safaa mokhtar</h3>
+			  <p>graphic designer</p>
+			</div>
+		</div>
+		<div class="img creative salah">
+			<label for="off18" id="do18"><img src="image/officers/salah.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>mohamed salah</h3>
+			  <p>video editor</p>
+			</div>
+		</div>
+		<div class="img digital aya">
+			<label for="off19" id="do19"><img src="image/officers/aya.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>aya adel</h3>
+			  <p>digital content specialist</p>
+			</div>
+		</div>
+		<div class="img digital yousf">
+			<label for="off20" id="do20"><img src="image/officers/yousf.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>yousef hamam</h3>
+			  <p>digital content manager</p>
+			</div>
+		</div>
+		<div class="img aqu noha">
+         <label for="off21" id="do21"><img src="image/officers/hamed.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>noha hamed</h3>
+			  <p>acquisition specialist</p>
+			</div>
+		</div>
+		<div class="img aqu bassant">
+       <label for="off22" id="do22"><img src="image/officers/bassant.jfif"></label>
+			<div class= "pic-overlay">
+			 <h3>bassant hamed</h3>
+			  <p>acquisition specialist</p>
+			</div>
+		</div>
+		<div class="img digital engy">
+        <label for="off23" id="do23"><img src="image/officers/exitt.jpg"></label>
+			<div class= "pic-overlay">
+			 <h3>engy allam</h3>
+			  <p>digital content specialist</p>
+			</div>
+		</div>
+		<div class="img aqu amera">
+         <label for="off24" id="do24"><img src="image/officers/attentions.jpg"></label>
+			<div class= "pic-overlay">
+			 <h3>amera</h3>
+			  <p>acquisition specialist</p>
+			</div>
+		</div>
+		 
+		</div>
+	 
+	 </div>
+	 
+	 
+	 <!---- start ticket option ------>
+	 <div class="ticket">
+	  <div class="split">
+		  
+		<span class="select-title">client:</span>
+		<div class="custom-select">
+          <input type="radio" name="img" id="client1">
+	      <input type="radio" name="img" id="client2">
+	      <input type="radio" name="img" id="client3">
+	      <input type="radio" name="img" id="client4">
+	 		 <! --- officer navs inputs ---!>
+
+   <div class="client-ticket-navs">
+	<label for="client1" id="dot1"><img src="image/Logoo.png"></label>
+    <label for="client2" id="dot2"><img src="image/MB.png"></label>
+	<label for="client3" id="dot3"><img src="image/unnamed.png"></label>
+	<label for="client4" id="dot4"><img src="image/info2.png"></label>
+	</div>
+		</div>
+		 <br>
+	 </div>
+		 
+	<div class="split"> 
+	 <form>
+	 <span class="select-title">url</span>
+	 <input type="text" placeholder="https://">
+	 </form>
+		<br>
+	<form>
+		<span class="select-title">type:</span>
+	  <div class="custom-select">	 
+	  		 <select>
+		 <option>daily</option>
+		 <option>longterm</option>
+		 <option>supportive</option>
+		 </select>
+
+		  <span class="custom-arrow"></span>
+		 </div>  
+      </form>
+		<br>
+	   <form>
+		<span class="select-title">platform</span>
+		<div class="custom-select">   
+		<select>
+		<option>youTube</option>
+		<option>facebook</option>
+		<option>digital</option>
+		</select>
+		 <span class="custom-arrow"></span>
+		</div>
+       </form>
+		 
+     </div>
+	<div class="split">
+	     <span class="select-title">description:</span>
+		<textarea placeholder="Remember, be nice!" id="comment" name="comment" rows="13" cols="30"></textarea>
+		
+	<label class="upload" for="thefile">
+      <input type="file" id="thefile" onchange="alertFilename()">
+     <span class="attach-btn">
+		 browse..
+		 <i class="fas fa-arrow-up"></i>
+	 </span>
+     <span id="fileName">no file selected</span>
+    </label>
+		 
+	</div>
+	
+	 
+	 </div>
+	<! -----–-----– End ticket div  ------------- > 
+		<button class="submit-ticket" href="#">create</button>  
+	 
+
+	 
+  </div>
+<! -----–-----– End ticket parent  ------------- > 
+
+		
+	<div class="request">
+	  <h1>request</h1>
+	   <div class="request-inputs">
+		<input type="checkbox" id="box-1">
+        <label for="box-1">annual</label>
+        <input type="checkbox" id="box-2">
+        <label for="box-2">two hours</label>
+		 <input type="checkbox" id="box-3">
+        <label for="box-3">loan</label>
+		   <div class="date">
+		   <label>start :</label> 
+			   <input type="date">
+		   <label>end :</label>
+			   <input type="date">
+			</div>
+		   
+		   <div class="time">
+		     <label>from :</label>
+		     <input type="time" >
+		     <label>to :</label>
+		     <input type="time" >
+		   </div>
+		   <div class="value">
+			<label>value :</label>
+		   <input type="number">
+		   </div>
+		  
+		   <form method=""class="send-request">
+		   <label >
+			   <span>send</span>
+		   </label>
+		   		   <div class="clear-fix"></div>
+
+		   </form>
+		   
+	   </div>
+		<div class="request-score">
+		      <div class="credits"> 
+            <h3>annual<i>&rarr;</i></h3>
+           <div class="calc">
+               <svg>
+                <circle cx="70" cy="70" r="70" ></circle>
+                <circle cx="70" cy="70" r="70" ></circle>
+               </svg>
+               <div class="numb">
+                   <h1>21</h1>
+               </div>
+               
+           </div>
+          </div>
+        
+        
+        <div class="credits">
+           <h3>excuses<i>&rarr;</i></h3>
+           <div class="calc">
+               <svg>
+                <circle cx="70" cy="70" r="70" ></circle>
+                <circle cx="70" cy="70" r="70" ></circle>
+               </svg>
+               <div class="numb">
+                   <h1>3</h1>
+               </div>
+               
+           </div>
+          </div>
+        
+        <div class="credits"> 
+           <h3>attendance<i>&rarr;</i></h3>
+           <div class="calc">
+               <svg>
+                <circle cx="70" cy="70" r="70" ></circle>
+                <circle cx="70" cy="70" r="70" ></circle>
+               </svg>
+               <div class="numb">
+                   <h1>22</h1>
+               </div>
+              
+           </div>
+          </div> 
+		
+	</div>	
+		
+		</div>
+	
+	
+		
+		
+		
+		
+		
+		
+</div>
+
+
+<! --------- end Medium -------------------->
+
+	 
+
+		
+        <script src="js/Tickets.js"></script>
+    </body>    
+</html>
